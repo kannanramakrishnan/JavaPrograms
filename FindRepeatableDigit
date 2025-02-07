@@ -1,0 +1,22 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int num = 112345;
+        if(repeat(num)) {
+            System.out.println("yes");
+        } else {
+            System.out.println("no");
+        }
+    }
+    
+    public static boolean repeat(int num) {
+        char[] numc = String.valueOf(num).toCharArray();
+        Set<Character> cset = new HashSet<>();
+        for(char c: numc) {
+            if(!cset.add(c)) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
