@@ -18,7 +18,7 @@ class Student {
         return new ArrayList<>(friends); // Defensive copy for immutability
     }
 }
-public class Main  {
+public class CheckMaxFriends  {
     public static void main(String[] args) {
         
         Student alice = new Student("Alice", new ArrayList<>());
